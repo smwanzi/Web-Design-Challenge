@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 ​
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Web Visualization Dashboard</title>
 ​
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
@@ -16,14 +16,15 @@
 
   <body>
     <!-- Start of navbar -->
-	<div class="navigation">
-	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Lattitude</a>
+  <div class="navigation">
+	  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!-- Insert Logo -->
+        <a class="navbar-brand" href="index.html"><span class="latitude">Latitude</a>
         <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 ​
-        <!-- List the nav links, forms, and other content for toggling -->
+        <!-- List the nav links for toggling -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
@@ -35,7 +36,7 @@
                 <a class="dropdown-item" href="wind.html">Wind Speed</a>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
 			  <a class="nav-link" href="comparison.html">Comparison</a>
 			</li>
             <li class="nav-item">
@@ -44,8 +45,8 @@
           </ul>
         </div>
       </nav>
-	</div>
-
+  </div>
+  
     <!-- End of navbar -->
 
     <!-- Start of container -->
@@ -61,55 +62,56 @@
         </div>
         <div class="col-lg-5 col-md-12">
 ​
-          <!-- Start of Visualizations imageNav Area -->
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">Visualizations</h2>
-              <hr />
-              <div class="container">
-			    <div class="row">
-				  <div class="col-6">
-                    <a href="temp.html">
-				      <img src="Resources/Assets/Fig1.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="imageNav-photo">
-				    </a>
-				  </div>
-				  <div class="col-6">
-                    <a href="humidity.html">
-				      <img src="Resources/Assets/Fig2.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
-			        </a>
-				  </div>
-				  <div class="col-6">
-​                   <a href="cloudiness.html">
-				      <img src="Resources/Assets/Fig3.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
-				    </a>
-				  </div>
-				  <div class="col-6">
-                    <a href="wind.html">
-				      <img src="Resources/Assets/Fig4.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
-				    </a>
-				  </div>
-                </div>
-			  </div>
+      <!-- Start of Visualizations imageNav Area -->
+      <section id="imageNav-area">
+        <div class="imageNav-content">
+          <h2 class="imageNav-header">Visualizations</h2>
+          <hr />
+          <div class="container">
+      <div class="row">
+      <div class="col-6">
+                <a href="temp.html">
+          <img src="Resources/Assets/Fig1.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="imageNav-photo">
+        </a>
+      </div>
+      <div class="col-6">
+                <a href="humidity.html">
+          <img src="Resources/Assets/Fig2.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
+          </a>
+      </div>
+      <div class="col-6">
+                <a href="cloudiness.html">
+          <img src="Resources/Assets/Fig3.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
+        </a>
+      </div>
+      <div class="col-6">
+                <a href="wind.html">
+          <img src="Resources/Assets/Fig4.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
+        </a>
+      </div>
             </div>
-          </section>
-          <!-- End of the Visualizations imageNav Area -->
-​
+    </div>
         </div>
       </section>
+      <!-- End of the Visualizations imageNav Area -->
+​
     </div>
-    <!-- End of container -->
+  </section>
+</div>
+<!-- End of container -->
 ​
-    <!-- Start of footer -->
-    <footer>
-      <div class="footer">&copy; Copyright Coding Bootcamp 2020</div>
-    </footer>
-    <!-- End of footer -->
-​
+<!-- Start of footer -->
+<footer>
+  <div class="footer">&copy; Copyright Coding Bootcamp 2020</div>
+</footer>
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<!-- End of footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
 ​
-</html>
+</html>    
