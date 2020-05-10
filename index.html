@@ -16,16 +16,17 @@
 ​
   <body>
     <!-- Navigation -->
-    <!-- (expand-lg) is pixel-point expands to full-page navigation -->
+    <!-- (expand-md) is pixel-point expands to full-page navigation -->
     <!-- (navbar-light) for navigation formatting -->
 	<div class="navigation">
-	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Lattitude</a>
+	  <nav class="navbar fixed-top navbar-expand-md navbar-light">
+      <!-- Insert Logo -->
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 ​
-        <!-- List the nav links, forms, and other content for toggling -->
+        <!-- List the nav links for toggling -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
@@ -37,7 +38,7 @@
                 <a class="dropdown-item" href="wind.html">Wind Speed</a>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
 			  <a class="nav-link" href="comparison.html">Comparison</a>
 			</li>
             <li class="nav-item">
@@ -56,7 +57,7 @@
           <div class="description-content">
             <h1 class="description-header">Summary: Latitude vs. X</h1>
             <hr>
-            <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="description-image">
+            <img src="Resources/assets/Fig1.png" class="left_shown rounded float-left" alt="Latitude vs. Max Temperature">
             <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
             <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
           </div>
@@ -71,23 +72,22 @@
               <div class="container">
 			    <div class="row">
 				  <div class="col-6">
-                    <a href="temp.html">
-				      <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="imageNav-photo">
-				    </a>
+                <a href="temp.html"><img src="Resources/assets/Fig1.png" alt="Latitude vs. Max Temperature", 
+                  title="Latitude vs. Max Temperature" class="class="img-fluid"></a>
 				  </div>
 				  <div class="col-6">
                     <a href="humidity.html">
-				      <img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
+				      <img src="Resources/assets/Fig2.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
 			        </a>
                     </div>
 				  <div class="col-6">
                     <a href="cloudiness.html">
-				      <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
+				      <img src="Resources/assets/Fig3.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
 				    </a>
 				  </div>
 				  <div class="col-6">
                     <a href="wind.html">
-				      <img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
+				      <img src="Resources/assets/Fig4.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
 				    </a>
 				  </div>
                 </div>
@@ -111,6 +111,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </body>
 ​
 </html>
